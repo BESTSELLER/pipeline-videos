@@ -1,0 +1,14 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pipeline-videos
+  description: temp repo
+  annotations:
+    github.com/project-slug: BESTSELLER/pipeline-videos
+    circleci.com/project-slug: github/BESTSELLER/pipeline-videos
+    sonarqube.org/project-key: BESTSELLER_pipeline-videos
+spec:
+  type: service
+  lifecycle: experimental
+  owner: BESTSELLER/engineering-services
