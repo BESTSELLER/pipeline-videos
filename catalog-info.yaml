@@ -1,13 +1,13 @@
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: pipeline-videos
-  description: temp repo
-  annotations:
+  description: Videos used by pipeline-docs
+  annotations: 
     github.com/project-slug: BESTSELLER/pipeline-videos
-    circleci.com/project-slug: github/BESTSELLER/pipeline-videos
 spec:
-  type: service
-  lifecycle: experimental
+  type: library
+  lifecycle: production
   owner: engineering-services
+  dependsOn:
+    - component:default/pipeline-docs
